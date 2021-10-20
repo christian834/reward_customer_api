@@ -1,16 +1,14 @@
 package com.rewardCustomer.dto.rewards;
 
-import java.sql.Date;
+import java.util.Map;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-@AllArgsConstructor
 public class RewardsResponseDTO {
 
-    private String customerID;
-    private int rewardPoints;
-    private Date creationDate;
+    private String status;
+    private String errorMessage;
+    private Map<Integer, RewardsResponsePerMonthDATA> data;
     
 }
