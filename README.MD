@@ -1,4 +1,4 @@
-# Rewards points for customer
+# Rewards points for customers
 This is a simple app that calculate the customer's reward points based in dollar spends 
 For that we use this function to calculate the rewards points
 
