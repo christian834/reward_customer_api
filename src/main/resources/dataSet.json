@@ -1,0 +1,32 @@
+[
+    {
+        "customerID": "12315",
+        "dollarsSpent" : 120,
+        "creationDate" : "2021-10-20"
+    },
+    {
+        "customerID": "12315",
+        "dollarsSpent" : 150,
+        "creationDate" : "2021-10-20"
+    },
+    {
+        "customerID": "12316",
+        "dollarsSpent" : 300,
+        "creationDate" : "2021-10-20"
+    },
+    {
+        "customerID": "12317",
+        "dollarsSpent" : 150,
+        "creationDate" : "2021-10-20"
+    },
+    {
+        "customerID": "12316",
+        "dollarsSpent" : 200,
+        "creationDate" : "2021-10-20"
+    },
+    {
+        "customerID": "12316",
+        "dollarsSpent" : 200,
+        "creationDate" : "2021-11-20"
+    }
+]

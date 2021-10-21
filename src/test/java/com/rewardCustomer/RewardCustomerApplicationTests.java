@@ -8,6 +8,7 @@ class RewardCustomerApplicationTests {
 
 	@Test
 	void contextLoads() {
+
 	}
 
 }

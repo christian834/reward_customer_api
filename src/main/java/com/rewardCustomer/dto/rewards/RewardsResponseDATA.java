@@ -2,13 +2,14 @@ package com.rewardCustomer.dto.rewards;
 
 import java.time.LocalDate;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 
 @Data
-public class RewardsDTO {
+@AllArgsConstructor
+public class RewardsResponseDATA {
 
-    private String customerID;
-    private int dollarsSpent;
+    private int rewardPointsPerMonth;
     private LocalDate  creationDate;
-
+    
 }

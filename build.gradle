@@ -21,7 +21,9 @@ repositories {
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
 	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation group: 'com.googlecode.json-simple', name: 'json-simple', version: '1.1.1'
 	implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.0'
+	testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.6.1'
 	implementation group: 'log4j', name: 'log4j', version: '1.2.16'
 	compileOnly 'org.projectlombok:lombok'
 	annotationProcessor 'org.projectlombok:lombok'
