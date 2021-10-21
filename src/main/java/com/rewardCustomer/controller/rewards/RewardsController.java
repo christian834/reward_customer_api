@@ -24,6 +24,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+/**
+ * Controller for Rewards 
+ * This recieve the data customer and calculate his rewards pints
+ */
 @Controller
 @RequestMapping(value = "/rewards")
 public class RewardsController {
@@ -37,6 +41,11 @@ public class RewardsController {
     @Autowired
     private RewardsService rewardsService;
 
+    /**
+     * Calculate rewards points per month of all clients
+     * @param rewardsDTOs contains customer's list each contains id, dollarsSpends and createdDate
+     * @return Rewards points of clientes in data, you can see the client id and a list with all the rewards point per month
+     */
     @RequestMapping(value = "/customersPerMonth", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResponseEntity<RewardsResponseDTO> calculateRewardsCustomersPerMonth(
@@ -92,6 +101,12 @@ public class RewardsController {
 
     }
 
+
+    /**
+     * Calculate total rewards points for all clients
+     * @param rewardsDTOs contains customer's list each contains client id, dollarsSpends and createdDate
+     * @return Rewards points of clientes in data, you can see the client id and a list with all the total rewards point
+     */
     @RequestMapping(value = "/customersTotal", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
     public ResponseEntity<RewardsResponseDTO> calculateRewardsCustomersTotal(
@@ -143,9 +158,14 @@ public class RewardsController {
 
     }
 
+    /**
+     * Calculate rewards points for a client
+     * @param rewardsDTOs contains client id, dollarsSpends and createdDate
+     * @return Rewards points of clientes in data, you can see the client id and a the rewards point
+     */
     @RequestMapping(value = "/customer", method = RequestMethod.POST, produces = "application/json")
     @ResponseBody
-    public ResponseEntity<RewardsResponseDTO> calculateRewardsCustomersTotal(
+    public ResponseEntity<RewardsResponseDTO> calculateRewardsCustomer(
             @RequestBody(required = true) final RewardsDTO rewardsDTO) {
 
         final RewardsResponseDTO rewardsResponseDTO = new RewardsResponseDTO();
