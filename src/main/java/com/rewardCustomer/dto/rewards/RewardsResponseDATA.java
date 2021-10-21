@@ -10,6 +10,6 @@ import lombok.Data;
 public class RewardsResponseDATA {
 
     private int rewardPointsPerMonth;
-    private LocalDate  creationDate;
+    private LocalDate  rewardsMonth;
     
 }

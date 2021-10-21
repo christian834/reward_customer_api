@@ -28,5 +28,20 @@
         "customerID": "12316",
         "dollarsSpent" : 200,
         "creationDate" : "2021-11-20"
+    },
+    {
+        "customerID": "12318",
+        "dollarsSpent" : 30,
+        "creationDate" : "2021-11-20"
+    },
+    {
+        "customerID": "12319",
+        "dollarsSpent" : 40,
+        "creationDate" : "2021-11-20"
+    },
+    {
+        "customerID": "12319",
+        "dollarsSpent" : 51,
+        "creationDate" : "2021-12-20"
     }
 ]
